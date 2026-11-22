@@ -92,7 +92,7 @@ body {
 		</style>
 		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
 <link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
-
+<style>#rotate-hint{display:none;position:fixed;inset:0;z-index:9999;background:#120e10;color:#f2d27a;font:600 22px sans-serif;align-items:center;justify-content:center;text-align:center;line-height:1.7}@media (orientation:portrait) and (pointer:coarse){#rotate-hint{display:flex}}</style><script>addEventListener('DOMContentLoaded',function(){var d=document.createElement('div');d.id='rotate-hint';d.innerHTML='&#8635;<br>휴대폰을 가로로 돌려주세요';document.body.appendChild(d);});</script>
 	</head>
 	<body>
 		<canvas id="canvas">
@@ -201,7 +201,7 @@ const engine = new Engine(GODOT_CONFIG);
 		setStatusMode('progress');
 		// GitHub Pages(파일 100MB 제한)용: 조각난 pck 를 받아 합친 뒤 엔진에 넘김
 		const PCK_PARTS = ["pck/index.pck.0", "pck/index.pck.1"];
-		const PCK_SIZE = 147254568;
+		const PCK_SIZE = 147259164;
 		const showProgress = function (current, total) {
 			if (current > 0 && total > 0) {
 				statusProgress.value = current;
